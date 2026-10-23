@@ -1,0 +1,28 @@
+<h1>Hello, World!</h1>
+<p>Welcome to my website.</p>
+
+<script>
+  const employees = [
+    { name: "John Doe", salary: 50000 },
+    { name: "akshaya", salary: 60000 },
+    { name: "akshaya", salary: 70000 },
+    { name: "sneha", salary: 70000 },
+  ];
+
+  const updateemployees = employees.map((employee) => ({
+    ...employee,
+    salary: employee.salary + 5000,
+  }));
+  console.log(updateemployees);
+  const employee = {
+    name: "John Doe",
+    salary: 50000,
+  };
+  if (employee.name === "John Doe") {
+    console.log("Employee found");
+  }
+  // Akshaya employee find salary
+
+  console.log(employees.find((employee) => employee.name === "akshaya")); // Output: { name: "akshaya", salary: 60000 }
+  console.log(employees.filter((employee) => employee.name === "ashish")); // Output: []
+</script>
